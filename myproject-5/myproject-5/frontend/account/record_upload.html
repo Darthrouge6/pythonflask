@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>wegu | Register</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">Wegu</h1>
+
+            </div>
+            <h3>Upload the records</h3>
+            <p>Create account to see it in action.</p>
+            <form class="m-t" role="form" action="/account/update_record" method="post">
+                <div class="form-group">
+                    <input type="number" class="form-control" name="machine_id" placeholder="Machine_ID" required="">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="part_id" placeholder="Part_ID" required="">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="cycle" placeholder="cycle" required="">
+                </div>
+<!--                <div class="form-group">-->
+<!--                    <input type="number" class="form-control" name="furnace_quantity" placeholder="furnace_quantity" required="">-->
+<!--                </div>-->
+                <div class="form-group">
+                    <input type="number" class="form-control" name="machine_downtime" placeholder="machine_downtime" required="">
+                </div>
+
+                <div class="form-group">
+                        <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy </label></div>
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">Submit</button>
+            </form>
+            <p class="m-t"> <small>Wegu &copy; 2023</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <!-- iCheck -->
+
+
+</body>
+
+</html>
